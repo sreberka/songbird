@@ -8,13 +8,15 @@ export const Variant = ({bird}) => {
 
     const checkVariant = () => {
         if(bird.id === questionBird.id) {
+            checkRight(true)
             setAnswer('success')
             setScore(score + 5 - error)
-            checkRight(true)
         }
         else if (!guessed) {
             setAnswer('error')
             setError(error + 1)
+        } else {
+            setAnswer('')
         }
         setChecked(true)
         setVariant(bird)
