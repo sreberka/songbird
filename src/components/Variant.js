@@ -15,7 +15,7 @@ export const Variant = ({bird}) => {
         else if (!guessed) {
             setAnswer('error')
             setError(error + 1)
-        } else {
+        } else if (!checked) {
             setAnswer('')
         }
         setChecked(true)
