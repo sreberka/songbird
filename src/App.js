@@ -32,10 +32,7 @@ function App() {
     const clearData = () => {
         setActive(0)
         setComplited(false)
-    }
-
-    const checkBird = (bird) => {
-        setVariant(bird)
+        setScore(0)
     }
 
     const checkRight = () => {
